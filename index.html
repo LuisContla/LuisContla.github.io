@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado César</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header><h1>Cifrado César</h1></header>
+    <div class="contenedor">
+        <div class="datos">
+            <!-- Aquí va el texto que se va a cifrar o cifrar -->
+            <article class="datos_1">
+                <p><h3>Por favor ingrese el texto a cifrar</h3></p>
+                <br>
+                <p><input type="text" id="cadena" placeholder="Texto"></p>
+                <br>
+                <!-- Aquí van los botones para cifrar o descifrar -->
+                <p><input class="boton" type="button" value="Cifrar" onclick="codificar()">
+                <input class="boton" type="button" value="Decifrar" onclick="decodificar()">
+                <input class="boton" type="button" value="Reiniciar" onclick="reiniciar()"></p>
+            </article>
+            <!-- También debe ir el campo de donde se pondrá el posicionamiento -->
+            <aside>
+                <p><h3>Por favor ingrse el valor del posicionamiento</h3></p>
+                <br>
+                <input type="number" name="posicionamiento" id="posicionamiento" value="0" placeholder="No negativos" onpaste="return false;" ondrop="return false;" min="0">
+            </aside>
+        </div>
+        <div class="resultado_contenedor">
+            <!-- Aquí va el resultado del cifrado o decifrado -->
+            <article>
+                <p><h3>Este es el resultado:</h3></p>
+                <br>
+                <div class="resultado" id="resultado">
+                    <textarea id="res" placeholder="Aquí aparecerá tu resultado" onpaste="return false;" ondrop="return false;"></textarea>
+                </div>
+                <br>
+                <!-- También va el boton de poner el resultado en el campo de texto a cifrar -->
+                <p><input class="boton" type="button" value="Copiar" onclick="colocar()"></p>
+            </article>                      
+        </div>
+    </div>
+    <script src="js/logica.js"></script>
+</body>
+</html>
