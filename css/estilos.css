@@ -5,8 +5,20 @@
 	text-align: center;
 }
 
+/* Estilos generales */
+
 body{
 	background-color: #C3D0E5;
+}
+
+nav{
+	border: 7px solid #5171A5;
+	background-color: #ADD9DA;
+	margin: 1rem;
+	border-radius: 10px;
+	padding: 1rem;
+	vertical-align: middle;
+	width: 30%;
 }
 
 header{
