@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cifrado César</title>
+    <title>Cifrado Viggenere</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <nav><h4><a href="index.html">Cifrado César</a> | <a href="viggenere.html">Cifrado Viggenere</a></h4></nav>
-    <header><h1>Cifrado César</h1></header>
+    <header><h1>Cifrado Viggenere</h1></header>
+    <!-- Solo copié y pegé la interfaz del Cifrado César xD --> 
     <div class="contenedor">
         <div class="datos">
             <!-- Aquí va el texto que se va a cifrar o cifrar -->
@@ -18,15 +19,15 @@
                 <p><input type="text" id="cadena" placeholder="Texto"></p>
                 <br>
                 <!-- Aquí van los botones para cifrar o descifrar -->
-                <p><input class="boton" type="button" value="Cifrar" onclick="codificar()">
-                <input class="boton" type="button" value="Decifrar" onclick="decodificar()">
+                <p><input class="boton" type="button" value="Cifrar" onclick="comprobarLongitudCodificar()">
+                <input class="boton" type="button" value="Decifrar" onclick="comprobarLongitudDecodificar()">
                 <input class="boton" type="button" value="Reiniciar" onclick="reiniciar()"></p>
             </article>
-            <!-- También debe ir el campo de donde se pondrá el posicionamiento -->
+            <!-- También debe ir el campo de donde se pondrá la palabra clave -->
             <aside>
-                <p><h3>Por favor ingrese el valor del posicionamiento</h3></p>
+                <p><h3>Por favor ingrese la palabra clave</h3></p>
                 <br>
-                <input type="number" name="posicionamiento" id="posicionamiento" value="0" placeholder="No negativos" onpaste="return false;" ondrop="return false;" min="0">
+                <input type="text" name="posicionamiento" id="posicionamiento" placeholder="Clave" onpaste="return false;" ondrop="return false;" min="0">
             </aside>
         </div>
         <div class="resultado_contenedor">
@@ -43,6 +44,6 @@
             </article>                      
         </div>
     </div>
-    <script src="js/logica.js"></script>
+    <script src="js/vigi.js"></script>
 </body>
 </html>
